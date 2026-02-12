@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nigape | Generative AI & Prompt Engineering Course</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #000000;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    :root {
+      --pink: #ff2d95;
+      --lavender: #c7a6ff;
+      --dark: #000000;
+      --card: #111111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(0, 0, 0, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--pink);
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--lavender);
+    }
+
+    .btn {
+      background: linear-gradient(135deg, var(--pink), var(--lavender));
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px rgba(255, 45, 149, 0.6);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 90vh;
+      padding: 0 10%;
+      background: radial-gradient(circle at top, #1a0010, #000);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, var(--pink), var(--lavender));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 18px;
+      opacity: 0.85;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      padding: 80px 10%;
+      background: #050505;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 50px;
+      color: var(--lavender);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--pink);
+      box-shadow: 0 0 20px rgba(255, 45, 149, 0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: var(--pink);
+    }
+
+    .cta {
+      text-align: center;
+      padding: 80px 10%;
+      background: radial-gradient(circle at bottom, #14001f, #000);
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: var(--lavender);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10%;
+      background: #000;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Nigape</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#course">Course</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#course" class="btn">Enroll Now</a>
+  </header>
+
+  <section class="hero">
+    <h1>Master Generative AI & Prompt Engineering</h1>
+    <p>
+      Learn how to create powerful AI prompts, build real-world AI tools, and unlock
+      high‑income digital skills with Nigape’s industry‑focused training program.
+    </p>
+    <a href="#course" class="btn">Start Learning Today</a>
+  </section>
+
+  <section class="features" id="features">
+    <h2 class="section-title">Why Choose Nigape?</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Hands‑On AI Projects</h3>
+        <p>Build real Generative AI applications, chatbots, and automation workflows.</p>
+      </div>
+
+      <div class="card">
+        <h3>Prompt Engineering Mastery</h3>
+        <p>Learn advanced prompting frameworks used by professionals worldwide.</p>
+      </div>
+
+      <div class="card">
+        <h3>Career‑Focused Training</h3>
+        <p>Portfolio, freelancing guidance, and job‑ready AI skill development.</p>
+      </div>
+
+      <div class="card">
+        <h3>Beginner to Pro</h3>
+        <p>No coding background required. Step‑by‑step structured learning path.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta" id="course">
+    <h2>Start Your AI Career Today</h2>
+    <p style="margin-bottom:25px; opacity:0.8;">
+      Join Nigape’s Generative AI & Prompt Engineering course and become future‑ready.
+    </p>
+    <a href="#contact" class="btn">Join Now</a>
+  </section>
+
+  <footer id="contact">
+    © 2026 Nigape. All rights reserved.
+  </footer>
+
+</body>
+</html>
